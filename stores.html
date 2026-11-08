@@ -18,15 +18,42 @@ main{padding:22px 18px 28px}.eyebrow{font-size:11px;color:#0b7953;letter-spacing
 .stores{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.store{appearance:none;cursor:pointer;text-align:left;background:white;border:1.5px solid #e6eaf0;border-radius:18px;padding:15px;min-height:122px;color:#202943;box-shadow:0 7px 25px #202c4610}.store:focus-visible{outline:3px solid #7ab6f9;outline-offset:2px}.store.active{background:#eaf5ee;border-color:#109264}.store .pin{width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:#f0f2f8;font-size:16px;margin-bottom:9px}.store.active .pin{background:#d7f0e0}.store .name{display:block;font-size:14px;font-weight:800}.store .address{display:block;color:#7d8798;font-size:11px;margin-top:6px;line-height:1.4}.store .pick{font-size:10px;color:#0b7953;margin-top:9px;font-weight:800}
 .filters{display:flex;gap:7px;overflow-x:auto;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none}.filter{flex:none;background:white;border:1px solid #dfe5ed;border-radius:24px;padding:8px 11px;font-size:12px;color:#46526a;font-weight:730}.filter.active{background:#29275d;border-color:#29275d;color:white}
 .info{background:white;border:1px solid #e9edf2;border-radius:18px;min-height:130px;padding:22px 18px;text-align:center;box-shadow:0 9px 24px #202c4608}.info .bigicon{font-size:27px;margin-bottom:6px}.info strong{display:block;font-size:14px}.info p{color:#768297;font-size:12px;line-height:1.55;margin:8px 0 0}.products{display:grid;gap:11px}.product{display:flex;gap:12px;background:white;border-radius:16px;border:1px solid #e6eaf0;padding:13px}.pemoji{width:55px;height:55px;display:grid;place-items:center;background:#eff1f7;border-radius:14px;font-size:25px;flex:none}.pbody{flex:1;min-width:0}.product-title{font-size:13px;font-weight:800;margin:0 0 5px;overflow-wrap:anywhere}.product .price{font-size:14px;font-weight:800;color:#0e714e}.product .stock{font-size:11px;color:#65748c;margin-top:6px}
+.catalog-help{font-size:12px;color:#6a7488;line-height:1.5;margin:-4px 0 10px}
+.quick-picks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:14px}
+.quick-pick{appearance:none;text-align:left;background:linear-gradient(180deg,#ffffff,#fbfcfe);border:1.5px solid #e4e9f0;border-radius:18px;padding:12px;min-height:86px;cursor:pointer;color:#202943;display:flex;gap:10px;align-items:flex-start;box-shadow:0 10px 24px rgba(32,41,67,.05)}
+.quick-pick.active{background:#eff8f3;border-color:#0a8158}.quick-pick.service{background:linear-gradient(180deg,#fffdf8,#fff7ea);border-color:#eedab0}
+.quick-icon,.cat-icon{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;font-size:18px;line-height:1;background:#eef3ff;color:#33406c;flex:0 0 36px}
+.quick-pick.powerbank .quick-icon{background:#e9f7ef;color:#0a6c48}
+.quick-pick.cable .quick-icon{background:#fff4e8;color:#b56212}
+.quick-pick.service .quick-icon{background:#f0ecff;color:#4b3f91}
+.quick-copy,.cat-copy{min-width:0}.quick-title,.cat-title{display:block;font-weight:820;font-size:13px;line-height:1.35}.quick-hint,.cat-hint{display:block;color:#7b8598;font-size:10px;margin-top:4px;line-height:1.3}
 .category-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:14px}
-.cat-card{appearance:none;text-align:left;background:white;border:1.5px solid #e4e9f0;border-radius:17px;padding:13px 12px;min-height:91px;cursor:pointer;color:#202943;display:flex;gap:10px;align-items:flex-start}
-.cat-card.active{background:#eff8f3;border-color:#0a8158}.cat-icon{font-size:24px;line-height:1.25}.cat-copy{min-width:0}.cat-title{display:block;font-weight:820;font-size:13px;line-height:1.35}.cat-hint{display:block;color:#7b8598;font-size:10px;margin-top:4px;line-height:1.3}
+.cat-card{appearance:none;text-align:left;background:white;border:1.5px solid #e4e9f0;border-radius:17px;padding:11px 11px;min-height:78px;cursor:pointer;color:#202943;display:flex;gap:10px;align-items:flex-start}
+.cat-card.active{background:#eff8f3;border-color:#0a8158}.cat-copy{min-width:0}.cat-title{display:block;font-weight:820;font-size:13px;line-height:1.35}.cat-hint{display:block;color:#7b8598;font-size:10px;margin-top:4px;line-height:1.3}
+.selection-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid #e4e9f0;border-radius:15px;padding:12px 14px;margin:10px 0 14px;box-shadow:0 8px 20px rgba(32,41,67,.04)}
+.selection-copy strong{display:block;font-size:13px;color:#21304c}.selection-copy span{display:block;font-size:11px;color:#788297;margin-top:3px;line-height:1.4}.selection-bar button{appearance:none;border:1px solid #dfe6ef;background:#f8fafc;border-radius:11px;padding:8px 10px;font-size:11px;font-weight:760;color:#32415e;white-space:nowrap}
+.mob-quicklinks{display:none}
+@media (max-width:390px){.quick-picks,.category-grid,.products{grid-template-columns:1fr 1fr}.quick-pick,.cat-card{min-height:82px}.quick-icon,.cat-icon{width:32px;height:32px;font-size:16px;border-radius:10px}}
 .catalog-options{background:#fff;border:1px solid #e4e9f0;border-radius:16px;padding:14px 0 9px;margin-bottom:13px}
 .catalog-options[hidden]{display:none}.option-label{padding:0 14px;font-size:12px;font-weight:780;color:#303a54;margin:0 0 9px}.catalog-options .filters{margin:0 0 10px;padding:0 14px}.brand-hint{font-size:11px;line-height:1.5;color:#8893a6;margin:0 14px 10px}
 .cat-card:focus-visible,.filter:focus-visible{outline:3px solid #7ab6f9;outline-offset:2px}
 .notice{margin-top:19px;border-radius:17px;background:#fff;border:1px solid #e9edf2;padding:17px}.notice strong{display:block;font-size:13px}.notice p{color:#718096;font-size:12px;line-height:1.6;margin:6px 0 0}.notice a{color:#087c52;font-weight:750;text-decoration:none}
 .bottom{position:fixed;z-index:5;left:50%;transform:translateX(-50%);bottom:0;max-width:520px;width:100%;border-top:1px solid #e6e9ed;background:#fff;display:grid;grid-template-columns:repeat(3,1fr);padding:10px 0 max(12px,env(safe-area-inset-bottom))}.bottom a{text-decoration:none;font-size:11px;text-align:center;color:#657186;font-weight:750}.bottom a span{display:block;font-size:21px;margin-bottom:3px}.bottom a.active{color:#0c7952}
 @media(min-width:650px){.app{margin:18px auto;border-radius:26px;overflow:hidden;min-height:90vh}.bottom{bottom:12px;border-radius:25px;box-shadow:0 10px 50px #22314c19}.top{position:static}}
+</style>
+
+<style id="mob-navigation-style">
+#mob-global-nav{position:sticky;top:0;z-index:5000;width:100%;max-width:520px;margin:0 auto;background:rgba(255,255,255,.98);border-bottom:1px solid #d9e1ec;box-shadow:0 3px 9px rgba(15,24,44,.08);color:#162c40;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:7px 10px 8px}
+#mob-global-nav *{box-sizing:border-box}
+#mob-global-nav .mob-hist{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+#mob-global-nav .mob-hist button{appearance:none;border-radius:12px;border:1px solid #d2dce8;background:#f1f5f9;color:#193049;font-weight:750;font-size:14px;min-height:37px;flex:1;padding:7px 12px;cursor:pointer}
+#mob-global-nav .mob-hist button:active{background:#dfeaf1}
+#mob-global-nav .mob-links{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;white-space:nowrap}
+#mob-global-nav .mob-links::-webkit-scrollbar{display:none}
+#mob-global-nav .mob-links a{display:inline-flex;align-items:center;justify-content:center;border:1px solid #dce3ec;color:#1a3247;text-decoration:none;font-weight:750;font-size:12px;min-height:35px;padding:6px 9px;border-radius:11px;flex:1 0 auto;background:#fff}
+#mob-global-nav .mob-links a[aria-current="page"]{background:#e7f5ee;color:#0b654b;border-color:#abdcc5}
+#mob-global-nav button:focus-visible,#mob-global-nav a:focus-visible{outline:3px solid #337ab7;outline-offset:2px}
+@media(max-width:360px){#mob-global-nav{padding:6px 8px}#mob-global-nav .mob-links a{font-size:11px;padding:6px 7px}#mob-global-nav .mob-hist button{font-size:13px}}
 </style>
 </head>
 <body>
@@ -40,6 +67,8 @@ main{padding:22px 18px 28px}.eyebrow{font-size:11px;color:#0b7953;letter-spacing
   <div class="sectiontitle"><h2>Выбрать магазин</h2><span class="small" id="storeCount">4 точки</span></div>
   <div id="stores" class="stores" aria-label="Выбор магазина"></div>
   <div class="sectiontitle"><h2>Разделы каталога</h2><span class="small">Выбери категорию</span></div>
+  <p class="catalog-help">Сделал кнопки более понятными: с первого взгляда видно, где телефоны, кабели, пауэрбанки и ремонт.</p>
+  <div id="quickPicks" class="quick-picks" role="group" aria-label="Быстрые действия каталога"></div>
   <div id="categoryGrid" class="category-grid" role="group" aria-label="Категории товаров"></div>
   <div class="catalog-options" id="catalogOptions" hidden>
     <div class="option-label" id="segmentLabel">Подкатегории</div>
@@ -49,6 +78,7 @@ main{padding:22px 18px 28px}.eyebrow{font-size:11px;color:#0b7953;letter-spacing
     <p id="brandHint" class="brand-hint">Бренды появятся, когда добавим модели.</p>
   </div>
   <div class="sectiontitle"><h2 id="productHeading">Весь каталог</h2><span class="small" id="productCount">0 товаров</span></div>
+  <div id="selectionBar" class="selection-bar" aria-live="polite"></div>
   <div id="products" class="products" aria-live="polite"></div>
   <div class="notice"><strong>Что будет дальше?</strong><p>Названия четырёх магазинов уже добавлены. Следующий шаг — реальные товары, бренды, цены и остатки. Для покупателей останется публичный просмотр, а изменение данных получат только уполномоченные сотрудники.<br><br><a href="./index.html">← Вернуться в магазин</a></p></div>
  </main>
@@ -75,8 +105,25 @@ const FALLBACK_CATEGORIES=[
  {code:'glass',title:'Защитные стёкла',icon:'🛡️',parent_code:'accessory',sort_order:35}
 ];
 let stores=[],products=[],stock=[],categories=FALLBACK_CATEGORIES,activeStore=1,activeCategory='all',activeSegment='all',activeBrand='all',connectionOkay=false;
+function mobStoreHistory(mode){
+ const depth=(history.state?.mobContext==='stores'?(history.state.mobDepth||0):0);
+ const next={mobContext:'stores',mobDepth:depth+(mode==='push'?1:0),mobStore:activeStore,mobCategory:activeCategory,mobSegment:activeSegment,mobBrand:activeBrand};
+ try{if(mode==='push')history.pushState(next,'',location.pathname+'#shop-'+activeStore+'-'+encodeURIComponent(activeCategory));else history.replaceState(next,'',location.href)}catch(_){}
+}
+window.addEventListener('popstate',e=>{
+ const st=e.state;if(!st||st.mobContext!=='stores')return;
+ activeStore=Number(st.mobStore)||1;activeCategory=st.mobCategory||'all';activeSegment=st.mobSegment||'all';activeBrand=st.mobBrand||'all';
+ remember(activeStore);renderStores();renderQuickPicks();renderCategoryFilters();renderSelectionBar();renderProducts();
+});
+
 const $=id=>document.getElementById(id);
 const catEmoji={phone:'📱',powerbank:'🔋',accessory:'🎧',service:'🛠️',other:'📦'};
+const quickPicks=[
+ {code:'phone',title:'Телефоны',hint:'Смартфоны и модели',icon:'📱',kind:'category',css:'phone'},
+ {code:'powerbank',title:'Пауэрбанки',hint:'Внешние аккумуляторы',icon:'🔋',kind:'category',css:'powerbank'},
+ {code:'cable',title:'Кабели',hint:'USB‑C, Lightning и другое',icon:'🔌',kind:'segment',parent:'accessory',css:'cable'},
+ {code:'service',title:'Ремонт',hint:'Оставить заявку или узнать статус',icon:'🛠️',kind:'page',href:'./index.html#service',css:'service'}
+];
 function setText(el,value){el.textContent=String(value==null?'':value)}
 function setStatus(ok){const box=$('status');box.textContent=ok?'● База подключена':'● Демо без связи';box.style.background=ok?'#eaf4ee':'#fff6e5';box.style.color=ok?'#0a6848':'#856327'}
 async function api(table,select='*'){
@@ -97,7 +144,7 @@ function renderStores(){
   const name=document.createElement('span');name.className='name';setText(name,s.name);
   const address=document.createElement('span');address.className='address';setText(address,s.address||'Адрес пока не указан');
   const pick=document.createElement('span');pick.className='pick';pick.textContent=s.id===activeStore?'✓ Выбран':'Нажми, чтобы выбрать';
-  btn.append(pin,name,address,pick);btn.addEventListener('click',()=>{activeStore=s.id;remember(s.id);renderStores();renderProducts()});box.appendChild(btn);
+  btn.append(pin,name,address,pick);btn.addEventListener('click',()=>{if(activeStore===s.id)return;activeStore=s.id;remember(s.id);mobStoreHistory('push');renderStores();renderQuickPicks();renderSelectionBar();renderProducts()});box.appendChild(btn);
  });
 }
 function showEmpty(title,body){const box=$('products');box.replaceChildren();const el=document.createElement('div');el.className='info';
@@ -106,30 +153,76 @@ function btn(text,klass,pressed,action){
  const node=document.createElement('button');node.type='button';node.className=klass+(pressed?' active':'');
  node.setAttribute('aria-pressed',String(pressed));node.textContent=text;node.addEventListener('click',action);return node;
 }
+function quickPickActive(item){
+ if(item.kind==='category') return activeCategory===item.code && activeSegment==='all';
+ if(item.kind==='segment') return activeCategory===item.parent && activeSegment===item.code;
+ return false;
+}
+function renderQuickPicks(){
+ const box=$('quickPicks'); if(!box) return; box.replaceChildren();
+ quickPicks.forEach(item=>{
+   const node=document.createElement('button');
+   node.type='button';
+   node.className='quick-pick '+(item.css||'')+(quickPickActive(item)?' active':'');
+   node.setAttribute('aria-pressed',String(quickPickActive(item)));
+   node.setAttribute('aria-label',item.title);
+   node.addEventListener('click',()=>{
+     if(item.kind==='page'){ location.assign(item.href); return; }
+     if(item.kind==='category'){
+       activeCategory=item.code; activeSegment='all'; activeBrand='all';
+     } else if(item.kind==='segment'){
+       activeCategory=item.parent; activeSegment=item.code; activeBrand='all';
+     }
+     mobStoreHistory('push'); renderQuickPicks(); renderCategoryFilters(); renderSelectionBar(); renderProducts();
+   });
+   const icon=document.createElement('span'); icon.className='quick-icon'; icon.textContent=item.icon||'📦';
+   const copy=document.createElement('span'); copy.className='quick-copy';
+   const title=document.createElement('span'); title.className='quick-title'; title.textContent=item.title;
+   const hint=document.createElement('span'); hint.className='quick-hint'; hint.textContent=item.hint||'Открыть раздел';
+   copy.append(title,hint); node.append(icon,copy); box.append(node);
+ });
+}
+function renderSelectionBar(){
+ const box=$('selectionBar'); if(!box) return;
+ const store=stores.find(s=>s.id===activeStore)?.name||'Магазин';
+ let category='Весь каталог';
+ if(activeSegment!=='all') category=categories.find(c=>c.code===activeSegment)?.title||category;
+ else if(activeCategory!=='all') category=categories.find(c=>c.code===activeCategory)?.title||category;
+ box.innerHTML='';
+ const copy=document.createElement('div'); copy.className='selection-copy';
+ copy.innerHTML='<strong>'+store+' · '+category+'</strong><span>'+(activeBrand!=='all'?'Бренд: '+activeBrand+' · ':'')+'Можно менять магазин, раздел и подкатегории в один тап.</span>';
+ const btn=document.createElement('button'); btn.type='button'; btn.textContent='Сменить магазин';
+ btn.addEventListener('click',()=>{ const s=$('stores'); if(s) s.scrollIntoView({behavior:'smooth',block:'start'}); });
+ box.append(copy,btn);
+}
 function renderCategoryFilters(){
  const roots=categories.filter(c=>!c.parent_code).sort((a,b)=>a.sort_order-b.sort_order);
  const box=$('categoryGrid');box.replaceChildren();
  [{code:'all',title:'Весь каталог',icon:'🛍️'},...roots].forEach(c=>{
    const item=btn('', 'cat-card', activeCategory===c.code,()=>{
-     activeCategory=c.code;activeSegment='all';activeBrand='all';renderCategoryFilters();renderProducts();
+     if(activeCategory===c.code&&activeSegment==='all'&&activeBrand==='all')return;
+     activeCategory=c.code;activeSegment='all';activeBrand='all';
+     mobStoreHistory('push');renderQuickPicks();renderCategoryFilters();renderSelectionBar();renderProducts();
    });
    const icon=document.createElement('span');icon.className='cat-icon';icon.textContent=c.icon||'📦';
    const copy=document.createElement('span');copy.className='cat-copy';
    const title=document.createElement('span');title.className='cat-title';title.textContent=c.title;
-   const hint=document.createElement('span');hint.className='cat-hint';hint.textContent=c.code==='all'?'Все разделы':c.code==='phone'?'Бренды и классы':c.code==='powerbank'?'Внешние аккумуляторы':'Выбрать раздел';
+   const hint=document.createElement('span');
+   hint.className='cat-hint';
+   hint.textContent=c.code==='all'?'Все разделы и акции':c.code==='phone'?'Фирмы, классы и модели':c.code==='powerbank'?'Ёмкость и наличие':c.code==='accessory'?'Кабели, зарядки, чехлы':c.code==='service'?'Услуги и ремонт':'Открыть раздел';
    copy.append(title,hint);item.append(icon,copy);box.append(item);
  });
  const children=categories.filter(c=>c.parent_code===activeCategory).sort((a,b)=>a.sort_order-b.sort_order);
- const opts=$('catalogOptions');opts.hidden=activeCategory!=='phone'&&children.length===0;
+ const opts=$('catalogOptions');opts.hidden=activeCategory!=='phone'&&children.length===0&&activeCategory!=='accessory';
  const chips=$('segmentFilters');chips.replaceChildren();
- chips.append(btn('Все','filter',activeSegment==='all',()=>{activeSegment='all';renderCategoryFilters();renderProducts()}));
- children.forEach(c=>chips.append(btn(c.title,'filter',activeSegment===c.code,()=>{activeSegment=c.code;renderCategoryFilters();renderProducts()})));
+ chips.append(btn('Все','filter',activeSegment==='all',()=>{if(activeSegment==='all')return;activeSegment='all';mobStoreHistory('push');renderQuickPicks();renderCategoryFilters();renderSelectionBar();renderProducts()}));
+ children.forEach(c=>chips.append(btn(c.title,'filter',activeSegment===c.code,()=>{if(activeSegment===c.code)return;activeSegment=c.code;mobStoreHistory('push');renderQuickPicks();renderCategoryFilters();renderSelectionBar();renderProducts()})));
  const names=[...new Set(products.filter(p=>activeCategory==='all'||p.category===activeCategory).map(p=>p.brand||'').filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ru'));
- const brands=$('brandFilters');brands.replaceChildren();brands.append(btn('Все бренды','filter',activeBrand==='all',()=>{activeBrand='all';renderCategoryFilters();renderProducts()}));
- names.forEach(name=>brands.append(btn(name,'filter',activeBrand===name,()=>{activeBrand=name;renderCategoryFilters();renderProducts()})));
+ const brands=$('brandFilters');brands.replaceChildren();brands.append(btn('Все бренды','filter',activeBrand==='all',()=>{if(activeBrand==='all')return;activeBrand='all';mobStoreHistory('push');renderQuickPicks();renderCategoryFilters();renderSelectionBar();renderProducts()}));
+ names.forEach(name=>brands.append(btn(name,'filter',activeBrand===name,()=>{if(activeBrand===name)return;activeBrand=name;mobStoreHistory('push');renderQuickPicks();renderCategoryFilters();renderSelectionBar();renderProducts()})));
  $('brandHint').hidden=names.length>0;
  $('brandFilters').hidden=names.length===0;
- $('segmentLabel').textContent=activeCategory==='phone'?'Класс телефона':'Подкатегории';
+ $('segmentLabel').textContent=activeCategory==='phone'?'Класс телефона':activeCategory==='accessory'?'Вид аксессуара':'Подкатегории';
 }
 function renderProducts(){
  const filtered=products.filter(p=>(activeCategory==='all'||p.category===activeCategory)
@@ -141,7 +234,7 @@ function renderProducts(){
  if(!filtered.length){
    showEmpty('Здесь пока нет товаров',connectionOkay?
     'Раздел уже готов. Позже добавим настоящие модели, бренды, ориентировочные цены и остатки для выбранного магазина.':
-    'Сейчас доступна демонстрационная страница без связи с базой. Новые товары появятся после подключения.');return;
+    'Сейчас доступна демонстрационная страница без связи с базой. Новые товары появятся после подключения.');renderSelectionBar();return;
  }
  const box=$('products');box.replaceChildren();for(const item of filtered){
   const card=document.createElement('div');card.className='product';
@@ -157,14 +250,53 @@ function renderProducts(){
   body.append(h,detail,pr,st);card.append(pic,body);box.appendChild(card);
  }
 }
-async function start(){loadRemembered();stores=FALLBACK;renderStores();renderCategoryFilters();renderProducts();
+async function start(){loadRemembered();if(history.state?.mobContext==='stores'){const x=history.state;activeStore=Number(x.mobStore)||activeStore;activeCategory=x.mobCategory||'all';activeSegment=x.mobSegment||'all';activeBrand=x.mobBrand||'all';}mobStoreHistory('replace');stores=FALLBACK;renderStores();renderQuickPicks();renderCategoryFilters();renderSelectionBar();renderProducts();
  try {
   const result=await Promise.all([api('stores','id,name,address,active'),api('products','id,title,category,price_rub,is_published,brand,model_name,segment,subcategory_code,price_is_estimate'),api('store_stock','store_id,product_id,quantity')]);
   stores=result[0].filter(x=>x.active);products=result[1].filter(x=>x.is_published);stock=result[2];connectionOkay=true;
   try {const cats=await api('catalog_categories','code,parent_code,title,icon,sort_order,active');if(cats.length)categories=cats.filter(c=>c.active)}catch(e){console.info('Категории отображаются локально:',e.message)}
  }catch(err){console.warn('MOBILAINISHA: публичный тестовый каталог временно недоступен',err.message);connectionOkay=false;stores=FALLBACK;products=[];stock=[]}
- setStatus(connectionOkay);renderStores();renderCategoryFilters();renderProducts();
+ setStatus(connectionOkay);renderStores();renderQuickPicks();renderCategoryFilters();renderSelectionBar();renderProducts();
 }
 start();
+</script>
+
+<script id="mob-navigation-script">
+/* Safe cross-page navigation. Browser history is the source of truth. */
+(function(){'use strict';
+ const path=location.pathname;const page=path.endsWith('stores.html')?'stores':path.endsWith('staff.html')?'staff':'index';
+ const links=[['index.html#home','🏠 Главная','index'],['stores.html','🏬 Магазины','stores'],['index.html#service','🔧 Ремонт','repair'],['staff.html#dashboard','👥 Сотрудники','staff']];
+ const nav=document.createElement('nav');nav.id='mob-global-nav';nav.setAttribute('aria-label','Основная навигация и история');
+ nav.innerHTML='<div class="mob-hist"><button type="button" id="mob-nav-back" aria-label="Вернуться на предыдущий экран">← Назад</button><button type="button" id="mob-nav-forward" aria-label="Перейти на следующий экран">Вперёд →</button></div><div class="mob-links">'+links.map(([href,title,id])=>'<a href="./'+href+'"'+((id===(page==='index'&&location.hash==='#service'?'repair':page))?' aria-current="page"':'')+'>'+title+'</a>').join('')+'</div>';
+ document.body.insertBefore(nav,document.body.firstChild);
+ function updateActive(){const active=page==='index'&&location.hash==='#service'?'repair':page;nav.querySelectorAll('.mob-links a').forEach((a,i)=>{if(links[i][2]===active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})}
+ window.addEventListener('popstate',updateActive);
+ window.addEventListener('hashchange',updateActive);
+ window.addEventListener('mob:pagechange',updateActive);
+ function insideAppRef(){try{const ref=new URL(document.referrer);return ref.origin===location.origin&&ref.pathname.includes('/mobilainisha-app/')}catch(_){return false}}
+ function goHome(){if(page!=='index')location.assign('./index.html#home');else if(location.hash!=='#home')location.assign('./index.html#home')}
+ function goBack(){const state=history.state;if(state&&typeof state.mobDepth==='number'&&state.mobDepth>0){history.back();return}if(insideAppRef()){history.back();return}goHome()}
+ function goForward(){history.forward()}
+ nav.querySelector('#mob-nav-back').addEventListener('click',goBack);
+ nav.querySelector('#mob-nav-forward').addEventListener('click',goForward);
+ // Native edge-swipe is handled by Safari. In home-screen standalone mode, enable app back/forward gestures.
+ let start=null;
+ document.addEventListener('touchstart',e=>{
+   const standalone=(navigator.standalone===true)||(window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches);
+   if(!standalone||e.touches.length!==1){start=null;return}
+   const t=e.touches[0],w=window.innerWidth;
+   const atLeft=t.clientX<=Math.min(42,w*.11),atRight=t.clientX>=w-Math.min(42,w*.11);
+   const target=e.target;
+   if(!(atLeft||atRight)||target.closest('input,textarea,select,[contenteditable],.mob-links,.mob-quicklinks')){start=null;return}
+   start={x:t.clientX,y:t.clientY,side:atLeft?'left':'right'};
+ },{passive:true});
+ document.addEventListener('touchend',e=>{
+   if(!start||!e.changedTouches.length)return;
+   const t=e.changedTouches[0],dx=t.clientX-start.x,dy=t.clientY-start.y,side=start.side;start=null;
+   if(Math.abs(dx)<92||Math.abs(dx)<Math.abs(dy)*1.8)return;
+   if(side==='left'&&dx>0)goBack();else if(side==='right'&&dx<0)goForward();
+ },{passive:true});
+ document.addEventListener('touchcancel',()=>start=null,{passive:true});
+})();
 </script>
 </body></html>
